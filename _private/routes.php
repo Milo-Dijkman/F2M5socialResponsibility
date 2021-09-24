@@ -12,8 +12,8 @@ SimpleRouter::group( [ 'prefix' => site_url() ], function () {
 	// Lees de docs, daar zie je hoe je routes kunt maken: https://github.com/skipperbent/simple-php-router#routes
 
 	SimpleRouter::get( '/', 'WebsiteController@home' )->name( 'home' );
-	SimpleRouter::get( '/finn', 'WebsiteController@home' )->name( 'home' );
-
+	SimpleRouter::get( '/finn', 'WebsiteController@finn' )->name( 'finn' );
+	SimpleRouter::get( '/admin', 'WebsiteController@index' )->name( 'admin' );
 
 
 
